@@ -55,7 +55,7 @@ app.get("/transactions", function(req, res) {
   });
 });
 
-app.get("/details", function(req, res) {
+app.get("https://blooming-spire-90924.herokuapp.com/details", function(req, res) {
   User.find({}, function(err, users) {
     res.render("details", {
       detail: users
