@@ -1,0 +1,29 @@
+<%- include("header") -%>
+<div class="col-sm col-sm-12 col-md-8 col-xl-6 b" id="up">
+  <form action="transfer" method="post">
+    <label id="f" for="userfrom"><b>From :</b></label>
+    <input name="usersfrom" value=<%= sender %> readonly></input><br>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Balance</th>
+        <th>Transfer Money To</th>
+      </tr>
+      <% detail.forEach(function(element){ %>
+      <% if(element.name != sender){ %>
+      <tr>
+        <th><%= element.name %></th>
+        <th><%= element.email %></th>
+        <th><%= element.balance %></th>
+        <th>
+
+          <button type="submit" name="usersto" class="btn btn-sm btn-outline-success" value=<%= element.name %>>click here</button>
+
+        </th>
+      </tr>
+      <%}});%>
+    </table>
+  </form>
+</div>
+<%- include("footer") -%>

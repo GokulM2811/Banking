@@ -1,0 +1,329 @@
+#occupation {
+  font-size: 15px;
+}
+
+#suc{
+  color:green;
+}
+
+.b {
+  border: 1px solid #c87941;
+  border-left: 0px;
+}
+
+#f {
+  margin-left: 50px;
+}
+
+#customerinfo {
+  font-size: 20px;
+}
+
+.end {
+  text-align: center;
+}
+
+#fail {
+  color: red;
+}
+
+#infos {
+  margin-top: 47.5px;
+  margin-bottom: 47px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+}
+
+#trans {
+  margin-top: 67.5px;
+  margin-bottom: 67.5px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+}
+
+#disp{
+  margin-top: 130.5px;
+  margin-bottom: 130.5px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+}
+
+.inside {
+  padding-left: 100px;
+}
+
+#up {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #e8e8e8;
+}
+
+table, th, tr {
+  border: 2px solid black;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f4f4f4;
+}
+
+.socialicons {
+  margin: 5px;
+}
+
+.sicons {
+  margin: 3px;
+}
+
+.l {
+  display: block;
+  color: black;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+.homebtn:hover {
+  background-color: #28df99;
+  border: 1px solid #28df99;
+  color: black;
+}
+
+.homebtn {
+  margin: 10px;
+  padding: 10px 15px;
+  width: 180px;
+}
+
+.headingfont {
+  font-family: 'Acme', sans-serif;
+  font-size: 30px;
+}
+
+.navbar-expand-md .navbar-collapse {
+  justify-content: flex-end !important;
+}
+
+.navbar {
+  padding-top: 20px;
+}
+
+#projecthead {
+  width: 50%;
+  height: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+  text-align: center;
+}
+
+#footer {
+  position: absolute;
+  width: 100%;
+  background-color: #e8e8e8;
+  height: 66px;
+  text-align: left;
+  padding: 20px;
+}
+
+.copyrights {
+  float: left;
+  width: 30%;
+}
+
+.copyrightsicons {
+  float: right;
+  width: 50%;
+  text-align: right;
+}
+
+.home {
+  padding: 20px;
+}
+
+.ppcol {
+  text-align: right;
+  padding: 20px;
+  height: 436px
+}
+
+#header {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  background-color: #e8e8e8;
+}
+
+#back1 {
+  position: fixed;
+  background-color: #c87941;
+  width: 35%;
+  z-index: -1;
+  height: 700px;
+}
+
+.ppimg {
+  text-align: right;
+  background-color: #c87941;
+}
+
+.ppname {
+  text-align: center;
+  width: 60%;
+  margin-left: auto;
+  margin-right: 0px;
+}
+
+.ppbdr {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: auto;
+  background-color: #e8e8e8;
+}
+
+#pp {
+  margin-top: 100px;
+}
+
+#intro {
+  width: 50%;
+}
+
+@media(max-width:992px) {
+  .ppbdr {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: auto;
+    background-color: #e8e8e8;
+  }
+
+  table, th, tr {
+    padding: 5px;
+  }
+
+  body {
+    background-color: #f4f4f4;
+  }
+
+  .ppimg {
+    background-color: #c87941;
+  }
+}
+
+@media(max-width:767px) {
+  .ppimg {
+    text-align: center;
+    background-color: #c87941;
+  }
+
+  #up {
+    width: 100%;
+  }
+
+  .b {
+    border: 1px solid #c87941;
+  }
+
+  table, th, tr {
+    padding: 5px;
+  }
+
+  .inside {
+    padding-left: 50px;
+  }
+
+  #infos {
+    margin-top: 63px;
+    margin-bottom: 63px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+  }
+
+  .ppname {
+    text-align: center;
+    width: 50%;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ppcol {
+    text-align: center;
+    padding: 20px;
+    padding-left: 30px;
+    height: 440px;
+  }
+
+  .ppbdr {
+    height: 360px;
+    padding-top: 60px;
+  }
+
+  #back1 {
+    background-color: #f4f4f4;
+  }
+
+  #header {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    background-color: #eeeeee;
+  }
+
+  #projecthead {
+    padding-top: 200px;
+  }
+
+  #footer {
+    position: sticky;
+    width: 100%;
+    background-color: #eeeeee;
+  }
+
+  .home {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .copyrights {
+    width: 150px;
+  }
+}
+
+#w {
+  margin: 10px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 7vw;
+  color: #373a40;
+  font-family: 'Architects Daughter', cursive;
+}
+
+#sl {
+  height: 396px;
+}
+
+#logo {
+  height: 50px;
+  width: 50px;
+}
+
+#greeting {
+  margin-bottom: 20px;
+}
+
+#company {
+  color: #28df99;
+}
+
+#feature {
+  margin: 10px;
+}

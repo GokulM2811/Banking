@@ -1,0 +1,18 @@
+<%- include("header") -%>
+<div class="col-sm col-sm-12 col-md-8 col-xl-6 border-left b" id="up">
+  <table>
+    <tr>
+      <th>Sender</th>
+      <th>Reciever</th>
+      <th>Transfer Amount</th>
+    </tr>
+    <% detail.forEach(function(element){ %>
+    <tr>
+      <th><%= element.sender %></th>
+      <th><%= element.reciever %></th>
+      <th><%= element.amount %></th>
+    </tr>
+    <%});%>
+  </table>
+</div>
+<%- include("footer") -%>

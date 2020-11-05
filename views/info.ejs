@@ -1,0 +1,15 @@
+<%- include("header") -%>
+<div class="card col-sm-12 col-md-8 col-lg-6 b" id="infos">
+  <h3 class="card-header" name="usersid" id="names"><%= display.name %></h3>
+  <div class="card-body inside">
+    <p class="card-title"><span id="customerinfo"><b>Account Number :</b></span> <%= display.accountno %></p>
+    <p class="card-title"><span id="customerinfo"><b>Email_Id :</b></span> <%= display.email %></p>
+    <p class="card-title"><span id="customerinfo"><b>Age :</b></span> <%= display.age %></p>
+    <p class="card-title"><span id="customerinfo"><b>Place :</b></span> <%= display.location %></p>
+    <p class="card-title"><span id="customerinfo"><b>Current Balance :</b></span> <%= display.balance %></p>
+    <form action="details2" method="post">
+      <button type="submit" name="usersid" class="btn homebtn btn-outline-success" value=<%= display.name %>>Transfer Funds</button>
+    </form>
+  </div>
+</div>
+<%- include("footer") -%>

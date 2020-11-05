@@ -1,0 +1,20 @@
+<%- include("header") -%>
+  <div class="col-sm col-sm-12 col-md-8 col-xl-6 b" id="up">
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Balance</th>
+        <th>To View Customer</th>
+      </tr>
+      <% detail.forEach(function(element){ %>
+      <tr>
+        <th><%= element.name %></th>
+        <th><%= element.email %></th>
+        <th><%= element.balance %></th>
+        <th><a href=<%= element.name %>>Click here</th>
+      </tr>
+      <%});%>
+    </table>
+  </div>
+<%- include("footer") -%>
