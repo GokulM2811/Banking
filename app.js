@@ -51,7 +51,7 @@ app.get("/transactions", function(req, res) {
   Transaction.find({}, function(err, pasttrans) {
     res.render("transactions.ejs", {
       detail: pasttrans
-    });
+    })
   });
 });
 
