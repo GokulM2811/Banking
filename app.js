@@ -49,7 +49,7 @@ app.get("/", function(req, res) {
 
 app.get("/transactions", function(req, res) {
   Transaction.find({}, function(err, pasttrans) {
-    res.render("transactions", {
+    res.render("transactions.ejs", {
       detail: pasttrans
     });
   });
@@ -57,7 +57,7 @@ app.get("/transactions", function(req, res) {
 
 app.get("https://blooming-spire-90924.herokuapp.com/details", function(req, res) {
   User.find({}, function(err, users) {
-    res.render("details", {
+    res.render("details.ejs", {
       detail: users
     });
   });
@@ -65,7 +65,7 @@ app.get("https://blooming-spire-90924.herokuapp.com/details", function(req, res)
 
 app.post("/details2", function(req, res) {
   User.find({}, function(err, users) {
-    res.render("details2", {
+    res.render("details2.ejs", {
       sender: req.body.usersid,
       detail: users
     });
@@ -73,7 +73,7 @@ app.post("/details2", function(req, res) {
 });
 
 app.post("/transfer", function(req, res) {
-  res.render("transfer", {
+  res.render("transfer.ejs", {
     sends: req.body.usersfrom,
     recieves: req.body.usersto
   });
@@ -120,20 +120,20 @@ app.post("/complete", function(req, res) {
           });
           trans.save(function(err) {
             if (!err) {
-              res.render("failure",{
+              res.render("failure.ejs",{
                 error: 2
               });
             }
           });
         } else {
-          res.render("failure",{
+          res.render("failure.ejs",{
             error: 0
           });
         }
       }
     });
   } else {
-    res.render("failure",{
+    res.render("failure.ejs",{
       error: 1
     });
   }
@@ -144,7 +144,7 @@ app.get("/:username", function(req, res) {
   User.findOne({
     name: search
   }, function(err, item) {
-    res.render("info", {
+    res.render("info.ejs", {
       display: item
     });
   });
