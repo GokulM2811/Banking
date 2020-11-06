@@ -13,8 +13,6 @@ mongoose.connect("mongodb+srv://admin-gokul:" + appid +"@cluster0.f8i4r.mongodb.
   useUnifiedTopology: true
 });
 
-mongoose.set('useFindAndModify', false);
-
 const app = express();
 
 app.set('view engine', 'ejs');
