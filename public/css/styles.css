@@ -224,8 +224,8 @@ body {
   }
 
   #disp{
-    margin-top: 182.5px;
-    margin-bottom: 182.5px;
+    margin-top: 229.5px;
+    margin-bottom: 218.5px;
     margin-left: auto;
     margin-right: auto;
     padding: 0px;
@@ -248,11 +248,16 @@ body {
   }
 
   #infos {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 141px;
+    margin-bottom: 141px;
     margin-left: auto;
     margin-right: auto;
     padding: 0px;
+  }
+
+  #trans{
+    margin-top: 160px;
+    margin-bottom: 160px;
   }
 
   .ppname {
