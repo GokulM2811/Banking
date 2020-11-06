@@ -67,7 +67,7 @@ app.get("/details", function(req, res) {
       });
     } else {
       console.log(err);
-    }    
+    }
   });
 });
 
@@ -145,6 +145,10 @@ app.post("/complete", function(req, res) {
       error: 1
     });
   }
+});
+
+app.get("/check",function(req,res){
+  res.render("check.ejs");
 });
 
 app.get("/:username", function(req, res) {
