@@ -223,6 +223,14 @@ body {
     background-color: #c87941;
   }
 
+  #disp{
+    margin-top: 170.5px;
+    margin-bottom: 170.5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+  }
+
   #up {
     width: 100%;
   }
