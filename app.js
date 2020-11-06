@@ -5,11 +5,6 @@ const ejs = require("ejs");
 const _ = require("lodash");
 const mongoose = require('mongoose');
 
-
-
-const appid = process.env.MONGOOSE_ID;
-const url = "mongodb+srv://admin-gokul:" + appid +"@cluster0.f8i4r.mongodb.net/bankDB?retryWrites=true&w=majority";
-
 mongoose.connect(process.env.MONGODB_URI || url, {
   useNewUrlParser: true,
   useUnifiedTopology: true
