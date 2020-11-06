@@ -7,9 +7,9 @@ const mongoose = require('mongoose');
 
 
 const appid = process.env.MONGOOSE_ID;
-const url = "mongodb+srv://admin-gokul:" + appid +"@cluster0.f8i4r.mongodb.net/bankDB?retryWrites=true&w=majority"
+const url = "mongodb+srv://admin-gokul:" + appid +"@cluster0.f8i4r.mongodb.net/bankDB?retryWrites=true&w=majority";
 
-mongoose.connect(url, {
+mongoose.connect(process.env.MONGODB_URI || url, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
@@ -48,17 +48,26 @@ app.get("/", function(req, res) {
 
 app.get("/transactions", function(req, res) {
   Transaction.find({}, function(err, pasttrans) {
-    res.render("transactions.ejs", {
-      detail: pasttrans
-    })
+    if(!err){
+      res.render("transactions.ejs", {
+        detail: pasttrans
+      });
+    } else {
+      console.log(err);
+    }
+
   });
 });
 
-app.get("https://blooming-spire-90924.herokuapp.com/details", function(req, res) {
+app.get("/details", function(req, res) {
   User.find({}, function(err, users) {
-    res.render("details.ejs", {
-      detail: users
-    });
+    if(!err){
+      res.render("details.ejs", {
+        detail: users
+      });
+    } else {
+      console.log(err);
+    }    
   });
 });
 
