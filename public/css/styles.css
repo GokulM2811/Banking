@@ -115,6 +115,14 @@ body {
   padding-top: 20px;
 }
 
+#about{
+  margin-top:117px;
+  margin-bottom: 116px;
+  margin-left: auto;
+  margin-right: auto;
+  padding:0px;
+}
+
 #projecthead {
   width: 50%;
   height: 480px;
@@ -167,6 +175,10 @@ body {
   width: 35%;
   z-index: -1;
   height: 700px;
+}
+
+#head{
+  width:100%;
 }
 
 .ppimg {
@@ -224,20 +236,29 @@ body {
   }
 
   #disp{
-    margin-top: 229.5px;
-    margin-bottom: 218.5px;
+    margin-top: 190.5px;
+    margin-bottom: 178.5px;
     margin-left: auto;
     margin-right: auto;
     padding: 0px;
+  }
+
+  #about{
+    margin-top:155px;
+    margin-bottom: 155px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .br{
+    border:0px;
   }
 
   #up {
     width: 100%;
   }
 
-  .b {
-    border: 1px solid #c87941;
-  }
+
 
   table, th, tr {
     padding: 5px;
@@ -248,16 +269,16 @@ body {
   }
 
   #infos {
-    margin-top: 141px;
-    margin-bottom: 141px;
+    margin-top: 104px;
+    margin-bottom: 104px;
     margin-left: auto;
     margin-right: auto;
     padding: 0px;
   }
 
   #trans{
-    margin-top: 160px;
-    margin-bottom: 160px;
+    margin-top: 124px;
+    margin-bottom: 124px;
   }
 
   .ppname {

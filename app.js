@@ -42,6 +42,10 @@ app.get("/", function(req, res) {
   res.render("home.ejs")
 });
 
+app.get("/about",function(req,res){
+  res.render("about.ejs");
+});
+
 app.get("/transactions", function(req, res) {
   Transaction.find({}, function(err, pasttrans) {
     if(!err){
@@ -124,27 +128,27 @@ app.post("/complete", function(req, res) {
           });
           trans.save(function(err) {
             if (!err) {
-              res.render("failure.ejs",{
+              res.render("result.ejs",{
                 error: 2
               });
             }
           });
         } else {
-          res.render("failure.ejs",{
+          res.render("result.ejs",{
             error: 0
           });
         }
       }
     });
   } else {
-    res.render("failure.ejs",{
+    res.render("result.ejs",{
       error: 1
     });
   }
 });
 
-app.get("/check",function(req,res){
-  res.render("check.ejs");
+app.get("/contact",function(req,res){
+  res.render("contact.ejs");
 });
 
 app.get("/:username", function(req, res) {
